@@ -1,16 +1,23 @@
-import { FaqDataProps } from "../model/types"
-import {header} from '../model/data.json';
+import { SectionTitle } from "@/components/sectionTitle";
+import { FaqItem } from "./FaqItem";
+import { ContactSupportBlock } from "./ContactSupportBlock";
 
-export const FAQ = ({ faqData }: FaqDataProps) => {
+import { FaqDataProps } from "../model/types";
+import { header, supportText, supportButtonText } from "../model/data.json";
+
+
+export const Faq = ({ faqData }: FaqDataProps) => {
   return (
-    <>
-    <h1>{header}</h1>
-    {faqData.map((faq, index) => (
-      <div key={index} className="faq">
-        <h3>{faq.question}</h3>
-        <p>{faq.answer}</p>
+    <div className="max-w-[940px] mx-auto mt-16 px-4">
+      <div className="flex flex-col items-center">
+        <SectionTitle>{header}</SectionTitle>
+        <div className="flex flex-wrap mt-6 gap-[16px]">
+          {faqData.map((faq, index) => (
+            <FaqItem key={index} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+        <ContactSupportBlock supportText={supportText} supportButtonText={supportButtonText} />
       </div>
-    ))} 
-    </>
-  )
-}
+    </div>
+  );
+};

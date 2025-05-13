@@ -5,7 +5,7 @@ export interface BillingReview {
     rating: number
 }
 
-export interface FAQProps {
+export interface FaqProps {
     question: string
     answer: string
 }

@@ -1,4 +1,4 @@
-import { BillingReview, FAQProps } from "../model/types";
+import { BillingReview, FaqProps } from "../model/types";
 
 export const billingReviewsMock: BillingReview[] = [
     {
@@ -75,7 +75,7 @@ export const billingReviewsMock: BillingReview[] = [
     }
 ]
 
-export const faqMock: FAQProps[] = [
+export const faqMock: FaqProps[] = [
     {
         question: "Is Ace Picks good for beginners?",
         answer: "Definitely! Whether you’re a seasoned bettor or just getting started, our platform offers tips and resources for all experience levels."

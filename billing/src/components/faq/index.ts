@@ -1,1 +1,1 @@
-export { FAQ } from './ui/FAQ';
+export { Faq } from './ui/Faq';
