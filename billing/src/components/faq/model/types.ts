@@ -2,6 +2,9 @@ import { FaqItem } from '@/components/billing/model/types';
 
 export interface FaqDataProps {
   faqData: FaqItem[];
+  faqHeader: string;
+  supportText: string;
+  supportButtonText: string;
 }
 
 export interface FaqItemProps {
