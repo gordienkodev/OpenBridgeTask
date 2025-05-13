@@ -1,8 +1,9 @@
-import { FullStarIcon } from "@/components/icons/FullStarIcon";
-import { HalfStarIcon } from "@/components/icons/HalfStarIcon";
-import { EmptyStarIcon } from "@/components/icons/EmptyStarIcon";
+import { FullStarIcon } from '@/components/icons/FullStarIcon';
+import { HalfStarIcon } from '@/components/icons/HalfStarIcon';
+import { EmptyStarIcon } from '@/components/icons/EmptyStarIcon';
+import { RatingStarsProps } from '../model/types';
 
-export const getStars = (rating: number) => {
+export const RatingStars = ({ rating }: RatingStarsProps) => {
   const fullStars = Math.floor(rating);
   const hasHalfStar = rating % 1 !== 0;
   const emptyStars = 5 - Math.ceil(rating);
@@ -21,5 +22,5 @@ export const getStars = (rating: number) => {
     stars.push(<EmptyStarIcon key={`empty-${i}`} />);
   }
 
-  return stars;
+  return <div className="flex">{stars}</div>;
 };

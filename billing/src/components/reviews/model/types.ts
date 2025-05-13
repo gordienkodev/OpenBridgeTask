@@ -1,9 +1,13 @@
-import { BillingReview } from "@/components/billing/model/types";
+import { BillingReview } from '@/components/billing/model/types';
 
 export interface ReviewsProps {
-    billingReviewsData: BillingReview[]
+  billingReviewsData: BillingReview[];
 }
 
 export interface ReviewProps {
-    review: BillingReview;
+  review: BillingReview;
+}
+
+export interface RatingStarsProps {
+  rating: number;
 }

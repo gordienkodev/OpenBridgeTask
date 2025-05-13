@@ -1,10 +1,9 @@
-import { SectionTitle } from "@/components/sectionTitle";
-import { FaqItem } from "./FaqItem";
-import { ContactSupportBlock } from "./ContactSupportBlock";
+import { SectionTitle } from '@/components/sectionTitle';
+import { FaqItem } from './FaqItem';
+import { ContactSupportBlock } from './ContactSupportBlock';
 
-import { FaqDataProps } from "../model/types";
-import { header, supportText, supportButtonText } from "../model/data.json";
-
+import { FaqDataProps } from '../model/types';
+import { header, supportText, supportButtonText } from '../model/data.json';
 
 export const Faq = ({ faqData }: FaqDataProps) => {
   return (
@@ -16,7 +15,10 @@ export const Faq = ({ faqData }: FaqDataProps) => {
             <FaqItem key={index} question={faq.question} answer={faq.answer} />
           ))}
         </div>
-        <ContactSupportBlock supportText={supportText} supportButtonText={supportButtonText} />
+        <ContactSupportBlock
+          supportText={supportText}
+          supportButtonText={supportButtonText}
+        />
       </div>
     </div>
   );

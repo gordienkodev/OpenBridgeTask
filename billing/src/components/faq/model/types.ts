@@ -1,15 +1,15 @@
-import { FaqProps } from "@/components/billing/model/types";
+import { FaqItem } from '@/components/billing/model/types';
 
 export interface FaqDataProps {
-    faqData: FaqProps[]
+  faqData: FaqItem[];
 }
 
 export interface FaqItemProps {
-    question: string;
-    answer: string;
-};
+  question: string;
+  answer: string;
+}
 
 export interface ContactSupportBlockProps {
-    supportText: string;
-    supportButtonText: string;
+  supportText: string;
+  supportButtonText: string;
 }

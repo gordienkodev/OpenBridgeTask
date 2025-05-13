@@ -1,5 +1,5 @@
-import { ReviewsProps } from "../model/types";
-import { Review } from "./Review";
+import { ReviewsProps } from '../model/types';
+import { Review } from './Review';
 
 export const Reviews = ({ billingReviewsData }: ReviewsProps) => {
   const leftColumn = billingReviewsData.filter((_, index) => index % 3 === 0);
