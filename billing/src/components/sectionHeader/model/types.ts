@@ -1,4 +1,4 @@
 export interface SectionHeaderProps {
-  header: string;
-  subheader?: string;
+  billingHeader: string;
+  subHeader?: string;
 }
